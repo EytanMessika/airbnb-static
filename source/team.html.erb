@@ -1,0 +1,14 @@
+<div class= "container text-center padded">
+<h1 class = "text-center" > <%=  "Our team"  %> </h1>
+<ul class="list-inline text-center">
+  <% ["anne", "seb", "romain"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.jpg", class: "avatar-large" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+<h3 class="padded" >
+  <strong> contact@airbnb.com </strong>
+</h3>
+</div>
